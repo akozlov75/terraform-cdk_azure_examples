@@ -11,6 +11,7 @@
 * [Install terraform cli](https://learn.hashicorp.com/tutorials/terraform/install-cli)
 * Install node modules `npm install`
 * Create `.env` file based on `.env.example`
+* Get provider's libraries `npm run cdk:get`
 
 ## LOCAL DEVELOPMENT (UI)
 
