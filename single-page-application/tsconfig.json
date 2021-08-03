@@ -1,0 +1,80 @@
+{
+  "ts-node": {
+    "compilerOptions": {
+      "allowSyntheticDefaultImports": true,
+      "alwaysStrict": true,
+      "declaration": false,
+      "esModuleInterop": true,
+      "experimentalDecorators": true,
+      "forceConsistentCasingInFileNames": true,
+      "inlineSourceMap": true,
+      "inlineSources": true,
+      "isolatedModules": false,
+      "lib": [
+        "es2018"
+      ],
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "noFallthroughCasesInSwitch": false,
+      "noImplicitAny": true,
+      "noImplicitReturns": true,
+      "noImplicitThis": true,
+      "noUnusedLocals": false,
+      "noUnusedParameters": false,
+      "resolveJsonModule": true,
+      "skipLibCheck": true,
+      "strict": true,
+      "strictNullChecks": true,
+      "strictPropertyInitialization": false,
+      "target": "ES2018"
+    },
+    "exclude": [
+      "node_modules",
+      "build",
+      "cdk.out",
+      "coverage",
+      "src"
+    ],
+    "include": [
+      "lib",
+      "bin"
+    ]
+  },
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "strictNullChecks": false,
+    "typeRoots": [
+      "./node_modules/@types",
+      "./typings"
+    ]
+  },
+  "include": [
+    "src",
+    "typings"
+  ],
+  "exclude": [
+    "bin",
+    "lib",
+    "node_modules",
+    "build",
+    "cdk.out"
+  ]
+}

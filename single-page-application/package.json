@@ -1,0 +1,73 @@
+{
+  "name": "single-page-application",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "build": "rimraf build && craco build",
+    "cdk:build": "(cd ./cdk && tsc)",
+    "cdk:compile": "(cd ./cdk && tsc --pretty)",
+    "cdk:deploy": "(cd ./cdk && cdktf deploy)",
+    "cdk:get": "(cd ./cdk && cdktf get)",
+    "cdk:synth": "(cd ./cdk && cdktf synth)",
+    "cdk:watch": "(cd ./cdk && tsc -w)",
+    "eject": "react-scripts eject",
+    "start": "craco start",
+    "lint:code": "eslint . --ext .ts --ext .tsx",
+    "lint:markdown": "markdownlint '**/*.md' --ignore node_modules --ignore *.json",
+    "lint": "npm run lint:markdown && npm run lint:code",
+    "test": "craco test"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "typescript": "^4.1.2",
+    "web-vitals": "^1.0.1"
+  },
+  "devDependencies": {
+    "@cdktf/provider-azurerm": "^0.2.0",
+    "@craco/craco": "^6.2.0",
+    "@folder/readdir": "^3.1.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/mime-types": "^2.1.0",
+    "@types/node": "^12.20.18",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "autoprefixer": "^9.8.6",
+    "cdktf": "^0.5.0",
+    "constructs": "^3.3.112",
+    "dotenv": "^10.0.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsdoc": "^36.0.6",
+    "eslint-plugin-prefer-arrow": "^1.2.3",
+    "markdownlint-cli": "^0.28.1",
+    "md5-file": "^5.0.0",
+    "mime-types": "^2.1.32",
+    "postcss": "^7.0.36",
+    "react-scripts": "4.0.3",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.1.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
