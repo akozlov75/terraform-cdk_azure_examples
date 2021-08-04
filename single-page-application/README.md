@@ -2,7 +2,10 @@
 
 ## WHAT WE TRY TO ACHIEVE
 
-We will deploy the ReactJS application to the Azure storage account and we will serve it to the browser from the storage account's container data storage. For more information please read [Static Web Apps](https://azure.microsoft.com/en-us/services/app-service/static) documentation.
+* We deploy the ReactJS application to the Azure storage account.
+* We will serve SPA to the browser from container data storage.
+
+For more information please read [Static Web Apps](https://azure.microsoft.com/en-us/services/app-service/static) documentation.
 
 ## STACK
 
